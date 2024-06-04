@@ -14,7 +14,7 @@ struct ContentView: View {
     
     private func fetchData() {
         // Parse URL
-        guard let url = URL(string: "https://api.spoonacular.com/food/products/search?query=yogurt&apiKey=0a870f0bd45743ec8a70d450099da38e") else { return }
+        guard let url = URL(string: "https://api.spoonacular.com/food/products/search?query=yogurt&apiKey=(your API key)") else { return }
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             if let data = data {
